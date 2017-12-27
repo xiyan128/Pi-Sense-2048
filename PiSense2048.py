@@ -5,52 +5,6 @@ import random
 import time
 import sys
 
-###
-global sq00
-sq00 = [(0,0),(0,1),(1,0),(1,1)]
-global sq01
-sq01 = [(0,2),(0,3),(1,2),(1,3)]
-global sq02
-sq02 = [(0,4),(0,5),(1,4),(1,5)]
-global sq03
-sq03 = [(0,6),(0,7),(1,6),(1,7)]
-global sq10
-sq10 = [(2,0),(2,1),(3,0),(3,1)]
-global sq11
-sq11 = [(2,2),(2,3),(3,2),(3,3)]
-global sq12
-sq12 = [(2,4),(2,5),(3,4),(3,5)]
-global sq13
-sq13 = [(2,6),(2,7),(3,6),(3,7)]
-global sq20
-sq20 = [(4,0),(4,1),(5,0),(5,1)]
-global sq21
-sq21 = [(4,2),(4,3),(5,2),(5,3)]
-global sq22
-sq22 = [(4,4),(4,5),(5,4),(5,5)]
-global sq23
-sq23 = [(4,6),(4,7),(5,6),(5,7)]
-global sq30
-sq30 = [(6,0),(6,1),(7,0),(7,1)]
-global sq31
-sq31 = [(6,2),(6,3),(7,2),(7,3)]
-global sq32
-sq32 = [(6,4),(6,5),(7,4),(7,5)]
-global sq33
-sq33 = [(6,6),(6,7),(7,6),(7,7)]
-
-# Define columns and rows to make lookups easier when moving
-col0 = ['sq03', 'sq02', 'sq01', 'sq00']
-col1 = ['sq13', 'sq12', 'sq11', 'sq10']
-col2 = ['sq23', 'sq22', 'sq21', 'sq20']
-col3 = ['sq33', 'sq32', 'sq31', 'sq30']
-row0 = ['sq00', 'sq10', 'sq20', 'sq30']
-row1 = ['sq01', 'sq11', 'sq21', 'sq31']
-row2 = ['sq02', 'sq12', 'sq22', 'sq32']
-row3 = ['sq03' ,'sq13', 'sq23', 'sq33']
-
-###
-
 sh = SenseHat()
 
 # Clear LEDs
